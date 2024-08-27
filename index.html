@@ -28,7 +28,7 @@
   <body class="bg-[#F4F4F4]">
     <!-- header -->
     <header
-      class="w-full h-[680px] xl:h-[920px] bg-gradient-to-br from[rgba(255,255,255,0%)] to-white"
+      class="w-full h-[680px] xl:h-[920px] bg-gradient-to-b from-transparent to-white"
     >
       <nav class="flex justify-around items-center h-28 xl:h-36">
         <div class="flex w-44 h-11 items-center gap-2">
@@ -122,15 +122,15 @@
     <!-- main section start -->
     <main>
       <section
-        class="w-5/6 h-[2050px] xl:h-[1350px] my-0 mx-auto flex flex-col justify-around items-center"
+        class="w-5/6 h-[2050px] xl:h-[1350px] my-0 mx-auto flex flex-col justify-evenly items-center"
       >
         <!-- thoughtful design -->
 
         <div
-          class="w-full xl:w-5/6 h-[810px] xl:h-1/3 flex flex-col xl:flex-row justify-between xl:justify-evenly relative gap-10"
+          class="w-full xl:w-5/6 h-[810px] xl:h-[560px] flex flex-col xl:flex-row justify-between xl:justify-evenly relative gap-10"
         >
           <!-- arrow vector -->
-          <div class="hidden xl:inline absolute -top-16 left-14">
+          <div class="hidden xl:inline absolute -top-16 -left-12">
             <img src="assets/Vector.png" />
           </div>
 
@@ -389,6 +389,67 @@
             >
               <img src="assets/img5.png" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- my own section -->
+
+      <section
+        class="w-full h-[1290px] xl:h-[750px] xl:py-16 xl:px-32 flex flex-col justify-center gap-10 xl:gap-0 xl:justify-between items-center"
+      >
+        <div
+          class="w-64 h-10 rounded-3xl bg-[rgba(171,239,95,20%)] text-[#494949] flex justify-evenly items-center px-5"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+          <p class="text-base font-bold">Offer of the Month</p>
+        </div>
+
+        <div
+          class="w-full h-32 xl:h-28 flex flex-col justify-between items-center"
+        >
+          <h4
+            class="w-1/2 xl:w-full text-2xl xl:text-4xl font-bold text-[#212121] text-center"
+          >
+            10% On Booking, 90% On Handover
+          </h4>
+          <p
+            class="w-5/6 xl:w-2/4 text-base font-medium text-[#494949] text-center"
+          >
+            Reserve your future home with a 10% booking fee today. The remaining
+            90% is payable upon handover. Experience a seamless and stress-free
+            journey to your dream home.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col xl:flex-row justify-evenly items-center gap-6 xl:my-4 my-1"
+        >
+          <div
+            class="w-11/12 h-60 xl:w-2/6 xl:h-56 px-6 rounded-2xl border border-[#E9E9E9] flex justify-center items-center"
+          >
+            <img src="assets/article1.png" />
+          </div>
+          <div
+            class="w-11/12 h-60 xl:w-2/6 xl:h-56 px-6 rounded-2xl border border-[#E9E9E9] flex justify-center items-center"
+          >
+            <img src="assets/article2.png" />
+          </div>
+          <div
+            class="w-11/12 h-60 xl:w-2/6 xl:h-56 px-6 rounded-2xl border border-[#E9E9E9] flex justify-center items-center"
+          >
+            <img src="assets/article3.png" />
+          </div>
+        </div>
+
+        <div
+          class="w-72 h-14 bg-[rgba(171,239,95,50%)] border border-[#ABEF5F] rounded-full flex items-center justify-center gap-5 cursor-pointer"
+        >
+          <p class="text-[#212121] text-xl font-bold">Read More</p>
+          <div
+            class="w-8 h-8 bg-[#ABEF5F] rounded-full flex items-center justify-center"
+          >
+            <i class="fa-solid fa-arrow-right text-[#1C1C1C] -rotate-45"></i>
           </div>
         </div>
       </section>
