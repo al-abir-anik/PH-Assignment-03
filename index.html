@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- daisi ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -16,16 +33,20 @@
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- config.js for cdn -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Manrope"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-[#F4F4F4]">
+  <body class="bg-[#F4F4F4] font-mono">
     <!-- header -->
     <header
       class="w-full h-[680px] xl:h-[920px] bg-gradient-to-b from-transparent to-white"
@@ -521,7 +542,7 @@
           >
             Send Mail
             <div
-              class="w-8 h-8 bg-[#1C1C1C] rounded-full flex items-center justify-center cursor-pointer"
+              class="w-8 h-8 mx-3 bg-[#1C1C1C] rounded-full flex items-center justify-center cursor-pointer"
             >
               <i class="fa-solid fa-arrow-right text-white -rotate-45"></i>
             </div>
